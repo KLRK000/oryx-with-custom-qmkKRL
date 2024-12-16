@@ -1,5 +1,6 @@
 #include QMK_KEYBOARD_H
 #include "version.h"
+#include "features/achordion.h"
 
 enum custom_keycodes {
   RGB_SLD = EZ_SAFE_RANGE,
@@ -43,6 +44,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
+  if (!process_achordion(keycode, record)) { return false; }
   switch (keycode) {
 
   }
