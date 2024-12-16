@@ -6,6 +6,9 @@ enum custom_keycodes {
   RGB_SLD = EZ_SAFE_RANGE,
 };
 
+void matrix_scan_user(void) {
+  achordion_task();
+}
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_ergodox_pretty(
