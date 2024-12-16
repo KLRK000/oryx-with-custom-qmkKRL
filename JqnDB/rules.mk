@@ -7,5 +7,4 @@ SPACE_CADET_ENABLE = no
 CAPS_WORD_ENABLE = yes
 RGBLIGHT_ENABLE = no
 LTO_ENABLE = yes
-COMBO_ENABLE = yes
 SRC += features/achordion.c
