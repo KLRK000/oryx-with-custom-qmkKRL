@@ -4,15 +4,16 @@ on:
   workflow_dispatch:
     inputs:
       layout_id:
-        description: "Layout id available in URL https://configure.zsa.io/voyager/layouts/[ID_IS_HERE]/latest"
+        description: "Layout id available in URL https://configure.zsa.io/voyager/layouts/[ID_IS_HERE]/latest/0"
         required: true
-        default: "g7jjw"
+        default: "JqnDB"
       layout_geometry:
         description: "Keyboard type"
         type: choice
         options:
           - voyager
           - moonlander
+          - ergodox-ez
           - ergodox_ez
           - ergodox_ez/stm32/glow
           - ergodox_ez/stm32/shine
